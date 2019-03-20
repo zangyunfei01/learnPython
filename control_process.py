@@ -21,7 +21,7 @@ elif 80 < score <= 90:
 else:
     print('caibi')
 
-# for ，java中的foreach的写法，遍历各种可以数据
+# for ，java中的foreach的写法，遍历各种可以数据，即使是无序的，在python中也可以用for去遍历
 L = [10, 20, 30, 40]
 score = 0
 for x in L:
