@@ -26,9 +26,17 @@ print(student)
 student[5] = 'Banana'
 print(student)
 
+# dict长度用len方法
+print('student的长度是：', len(student))
+
+# 清空dict用clear方法
+student.clear()
+print(student)
+
 # dict删除元素的方式也是通过key，去删除对应的key-value
 # 删除元素的语法是del，然后想删什么直接删就行了
 # 删除list、tuple或dict也一样
+student = {1: 'Michael', 2: 'Bob', 3: 'Jerry', 4: 'Jerry', 5: 'Apple'}
 del student[5]
 print(student)
 
@@ -43,3 +51,12 @@ student = {1: 'Michael', 2: 'Bob', 3: 'Jerry', 4: 'Jerry', 5: 'Apple'}
 for key in student:
     value = student[key]
     print(key, value)
+
+# 判断一个key-value是否在dict中，用in关键字，在就是in，不在就是not in。dict中key是唯一的，判断的时候也是通过key
+student = {1: 'Michael', 2: 'Bob', 3: 'Jerry', 4: 'Jerry', 5: 'Apple'}
+print(1 in student)
+print(6 in student)
+print(2 not in student)
+print(7 not in student)
+
+

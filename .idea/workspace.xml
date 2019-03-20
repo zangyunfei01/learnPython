@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6541bd0c-8a4f-47c9-9003-af744f3b19a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/set.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/control_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/control_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/dict.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,11 +59,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dict.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+            <state relative-caret-position="-192">
+              <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/set.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.3/python_stubs/-1199943126/builtins.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="4466" column="8" selection-start-line="4466" selection-start-column="8" selection-end-line="4466" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -90,6 +108,7 @@
         <option value="$PROJECT_DIR$/if.py" />
         <option value="$PROJECT_DIR$/control_process.py" />
         <option value="$PROJECT_DIR$/dict.py" />
+        <option value="$PROJECT_DIR$/set.py" />
       </list>
     </option>
   </component>
@@ -132,7 +151,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dict">
+  <component name="RunManager" selected="Python.set">
     <configuration name="dict" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="learnPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -196,7 +215,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="practice" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="set" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="learnPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -208,7 +227,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/set.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -240,11 +259,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.set" />
         <item itemvalue="Python.dict" />
         <item itemvalue="Python.if" />
         <item itemvalue="Python.tuple" />
         <item itemvalue="Python.list" />
-        <item itemvalue="Python.practice" />
       </list>
     </recent_temporary>
   </component>
@@ -335,8 +354,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dict.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+        <state relative-caret-position="-192">
+          <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.3/python_stubs/-1199943126/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="4466" column="8" selection-start-line="4466" selection-start-column="8" selection-end-line="4466" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/set.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
         </state>
       </provider>
     </entry>
