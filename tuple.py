@@ -12,7 +12,7 @@ t = (1, 2, 3, 4)
 print(t[0])
 print(t)
 
-# tuple一旦创建，tuple中的元素就无法改变，因此可以使用索引访问tuple中的元素，但是不能像list那样使用添加、删除、替换方法
+# tuple一旦创建，tuple中的元素就无法改变，可以使用索引访问tuple中的元素，但是不能像list那样使用添加、删除、替换方法
 
 # 错误的方法使用
 # t.pop(3) → AttributeError: 'tuple' object has no attribute 'pop'
@@ -21,7 +21,7 @@ print(t)
 t = ()
 print(t)
 
-# tuple只有1个元素时，需要在元素后加上一个','以表示这个是tuple。不加的话()会表示运算时的优先级
+# tuple只有1个元素时，需要在元素后加上一个','以表示这个是tuple。不加的话()会表示运算时的优先级，会提示()多余并引导删除
 t = (1)
 print(t)
 t = (1,)
