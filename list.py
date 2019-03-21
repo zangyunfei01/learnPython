@@ -33,3 +33,21 @@ print(list2)
 # list替换元素：重新赋值
 list2[1] = 'bibi'
 print(list2)
+
+# 列表的长度用len()函数
+print(len(list2))
+
+# 列表中元素最大最小值用max()和min()
+# 这里给list2用max()和min()会报错，因为list2中包含不同类型数据，无法进行大小比较
+# TypeError: '>' not supported between instances of 'str' and 'int'
+
+list3 = [1, 2, 3, 4]
+print(max(list3), min(list3))
+
+# 这应该是比较的字母在ASCII码中对应的值
+list4 = ['Apple', 'Banana', 'Orange', '1']
+print(max(list4), min(list4))
+
+# 将tuple转化为list，只需要把list作为函数名，tuple作为参数传入即可
+t = (1, 2, 3)
+print(list(t))
