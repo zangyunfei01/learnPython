@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # list
 # python是动态语言，list中可以包含多种数据类型
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # 创建set可以用set函数，先创建一个list然后把list传入set中
 L = [1, 2, 3, 4]
 s = set(L)

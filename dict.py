@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # dict 等同于java中的Map，键值对组成的集合
 # dict 用{}表示，key和value用':'连接，key-value和key-value之间用','分隔
 

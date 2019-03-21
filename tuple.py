@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # python中另一种有序列表：tuple，称之为元组。
 # tuple与list写法不同之处是创建时存放元素用()替代了[]，但是访问时仍要用[]，因为访问时[]是用来放index的
 
