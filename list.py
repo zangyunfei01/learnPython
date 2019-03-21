@@ -51,3 +51,22 @@ print(max(list4), min(list4))
 # 将tuple转化为list，只需要把list作为函数名，tuple作为参数传入即可
 t = (1, 2, 3)
 print(list(t))
+
+
+# list截取用：分割
+# L[1:5]，取index为1 - 4位置上的元素，到5截止，不取5
+# L[:5]，取从0 - 4位置上的元素，到5截止，不取5。从0开始0可以默认不写
+# L[:]，取整个列表
+# L[5:]，取index从5开始到结束的元素
+# L[::5]，从index为0个元素开始取到最后，然后隔5个取1个
+# L[4::5]，从index为4的元素开始取到最后，然后隔5个取一个
+# L[4:20:5]，从index为4的元素开始取到index为20截止，不取index为20，然后隔5个取一个
+
+# 元组截取同理
+
+# 字符串截取同理
+def first_char_upper(s):
+    return s[:1].upper() + s[1:]  # 利用截取，把首字母和后面隔离出来，然后把首字母用upper方法转成大写，再与后面的拼接起来
+
+
+print(first_char_upper('hello'))
