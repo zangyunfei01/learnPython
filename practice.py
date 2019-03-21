@@ -27,7 +27,7 @@ def feibonaqi(x):
     a = 0
     b = 1
     while i < x:
-        print(b)
+        print(b, end=' ')
         m = b
         n = a + b
         a = m
@@ -41,7 +41,7 @@ feibonaqi(5)
 def feibonaqi_simple(x, i=0):
     a, b = 0, 1
     while i < x:
-        print(b)
+        print(b, end=' ')
         a, b = b, a + b
         i += 1
 
