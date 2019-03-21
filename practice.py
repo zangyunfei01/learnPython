@@ -18,3 +18,32 @@ leijun = "I'm OK"
 goodgoodstudy = 'Learning python in "imooc" '
 print(leijun)
 print(goodgoodstudy)
+
+
+# 斐波那契数列，当调用函数并输入参数x，输出数列前x位
+
+def feibonaqi(x):
+    i = 0
+    a = 0
+    b = 1
+    while i < x:
+        print(b)
+        m = b
+        n = a + b
+        a = m
+        b = n
+        i += 1
+
+
+feibonaqi(5)
+
+
+def feibonaqi_simple(x, i=0):
+    a, b = 0, 1
+    while i < x:
+        print(b)
+        a, b = b, a + b
+        i += 1
+
+
+feibonaqi_simple(5)
