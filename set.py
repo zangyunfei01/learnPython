@@ -23,11 +23,21 @@ print(s)
 s.add(567)
 print(s)
 
-# 另一个添加元素的方法是update，可以同时添加多个元素，添加的时候也可以把list、tuple、dict当做参数传入
+# 另一个添加元素的方法是update，可以同时添加多个元素，添加的时候也可以把list、tuple、dict当做参数传入，
+# 传入后不是把list、tuple等当做一个元素，而是把list、tuple中的元素添加到set中
 s.update('A', 'B', 'C')
 print(s)
-s.update(['L', 'M', 'N'], ('O', 'P', "Q"))
+s.update(['L', 'M', 'N'], ('O', 'P', 'QRST'))
 print(s)
+
+# 这里对set添加dict当做参数时，并没有生效也没有报错
+s.update({1: 'Michael', 2: 'Jerry'})
+print(s)
+
+# 对dict添加dict当做参数时是完全没问题的
+d = {1: 'Michael', 2: 'Jerry'}
+d.update({3: 'Bob'})
+print(d)
 
 # set删除元素用remove，如果是删除不存在的元素，用remove会报错。
 s.remove(567)
