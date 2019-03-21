@@ -12,7 +12,7 @@ print(student[1])
 student = {1: 'Michael', 2: 'Bob', 3: 'Jerry', 4: 'Jerry'}
 print(student)
 
-# key可以是int类型，也可以是string，也可以是tuple类型。tuple类型一旦创建不能改变
+# key是不可变的，所以key可以是int类型，也可以是string，也可以是tuple类型，但不能是list，因为list可变
 student = {'Michael': 1}
 print(student['Michael'])
 num = {(1, 2, 3): 'Num'}
