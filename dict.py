@@ -61,4 +61,6 @@ print(6 in student)
 print(2 not in student)
 print(7 not in student)
 
-
+# 遍历dict，用items同时输出key和value
+for k, v in student.items():
+    print(k, v)
