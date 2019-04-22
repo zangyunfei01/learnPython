@@ -70,3 +70,57 @@ def first_char_upper(s):
 
 
 print(first_char_upper('hello'))
+
+# list 练习
+
+# list用append方法直接在末尾添加元素
+list2.append('Banana')
+print(list2)
+
+# list用extend()方法，将指定list'添加到本list中
+list2.extend(list3)
+print(list2)
+
+# list用insert方法在指定位置添加元素
+list2.insert(5, 'a~ ApplePen')
+print(list2)
+
+# list用remove方法，匹配列表中已有的元素并删除
+# 如果没有这个元素，那就报错了 ValueError: list.remove(x): x not in list
+list2.remove('Banana')
+print(list2)
+
+# list用pop方法删除指定位置元素。如果不指定位置，直接pop()，则是删除末位元素
+list2.pop(0)
+
+# 清空list中的元素，就变成空list，相当于del list[:]
+# 而直接用del list，则是将list全部删除，再print的时候就报错了，因为list连个毛都没了
+# list2.clear()
+# del list2[:]
+# del list2
+print(list2)
+
+# list用index，返回指定元素的索引位置
+a = list2.index(1)
+print(a)
+
+# list用count，来统计指定元素出现的次数
+b = list2.count(1)
+print(b)
+
+# list用sort，对list进行排序，当然，元素类型得相同，不同就会在run的时候报错了
+# 直接print list.sort()会返回None，理解是list.sort()是排序过程，而不是生成一个新list，排序完后再print即是新排序后的结果
+list4 = [2, 5, 4, 3, 1]
+print(list4.sort())
+list4.sort()
+print(list4)
+
+# list倒序用reverse，字面意思就是倒序，直接print list.reverse()也是会返回None的
+list4.reverse()
+print(list4.reverse())
+print(list4)
+
+# list的copy就是复制了，相当于list[:]
+print(list4.copy())
+print(list4[:])
+print(list4.copy() == list4[:])
