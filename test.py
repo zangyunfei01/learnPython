@@ -3,7 +3,7 @@ L = [
     ['Java', 'Python', 'Ruby', 'PHP'],
     ['Adam', 'Bart', 'Lisa']
 ]
-
+balabala
 # 打印apple
 print(L[0][0])
 # print python
