@@ -2,6 +2,7 @@
 
 # list
 # python是动态语言，list中可以包含多种数据类型
+from builtins import len
 
 empty_list = []
 list2 = [1, 2, 'what are you fucking say', True]
