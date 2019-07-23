@@ -1,10 +1,9 @@
-test
+#!/usr/bin/env python3
 L = [
     ['Apple', 'Google', 'Microsoft'],
     ['Java', 'Python', 'Ruby', 'PHP'],
     ['Adam', 'Bart', 'Lisa']
 ]
-balabala
 # 打印apple
 print(L[0][0])
 # print python
@@ -26,3 +25,6 @@ def power2(x2, n2):
 
 print(power(2, 3))
 print(power2(2, 3))
+
+
+
