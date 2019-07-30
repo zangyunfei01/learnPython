@@ -71,3 +71,8 @@ def diff():
 
 # response('ruby', 'GET')
 diff()
+
+
+def test_assert():
+    d1, d2 = response('ruby', 'GET'), response('go', 'GET')
+    assert len(d1) == len(d2)
