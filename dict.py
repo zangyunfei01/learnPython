@@ -59,7 +59,6 @@ student = {1: 'Michael', 2: 'Bob', 3: 'Jerry', 4: 'Jerry', 5: 'Apple'}
 print(1 in student)
 print(6 in student)
 print(2 not in student)
-print(7 not in student)
 
 # 遍历dict，用items同时输出key和value
 for k, v in student.items():
