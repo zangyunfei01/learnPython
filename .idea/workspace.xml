@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6541bd0c-8a4f-47c9-9003-af744f3b19a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/learn_unittest/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn_unittest/html_test_runner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn_unittest/math_function.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn_unittest/test_math_function.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn_unittest/test_suite.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python_basics/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_unittest/HTMLReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterator_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basics/Iterator_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/control_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basics/control_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basics/dict.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basics/function.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iterator.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basics/iterator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basics/learn_requests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basics/list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basics/module.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basics/module_demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/naming_conventions" beforeDir="false" afterPath="$PROJECT_DIR$/python_basics/naming_conventions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basics/practice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/set.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basics/set.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuple.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basics/tuple.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_unittest/html_test_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_unittest/HTMLTestRunner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_unittest/test_suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_unittest/test_suite.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
