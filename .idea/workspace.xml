@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6541bd0c-8a4f-47c9-9003-af744f3b19a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api_test/data_provider/global_params.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_test/data_provider/members_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_test/test_function/members_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_test/HTMLReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_test/api/global_params.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_test/api/members_list.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_test/test_case/members_list_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_test/test_case/members_list_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_test/HTMLReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/api_test/HTMLReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_test/test_case/members_list_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_test/test_case/test_members_list.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_test/test_suite_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_test/test_suite_runner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_basics/learn_requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basics/learn_requests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +142,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in members_list_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_members_list.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="learnPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -159,7 +152,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/api_test/test_case/members_list_test.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/api_test/test_case/test_members_list.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -167,13 +160,13 @@
       <item itemvalue="Python.test_suite" />
       <item itemvalue="Python.test_suite_runner" />
       <item itemvalue="Python.members_list" />
-      <item itemvalue="Python tests.Unittests in members_list_test.py" />
+      <item itemvalue="Python tests.Unittests in test_members_list.py" />
       <item itemvalue="Python.members_list (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.test_suite_runner" />
-        <item itemvalue="Python tests.Unittests in members_list_test.py" />
+        <item itemvalue="Python tests.Unittests in test_members_list.py" />
         <item itemvalue="Python.members_list (1)" />
         <item itemvalue="Python.members_list" />
         <item itemvalue="Python.test_suite" />

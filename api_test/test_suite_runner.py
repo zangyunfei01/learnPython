@@ -4,7 +4,7 @@ from learn_unittest.HTMLTestRunner import HTMLTestRunner
 
 if __name__ == '__main__':
     case_path = os.path.join(os.getcwd(), 'test_case')
-    testSuite = unittest.defaultTestLoader.discover(start_dir=case_path, pattern='*test.py')
+    testSuite = unittest.defaultTestLoader.discover(start_dir=case_path, pattern='test*.py')
 
     with open('HTMLReport.html', 'wb+') as file:
         runner = HTMLTestRunner(stream=file,
