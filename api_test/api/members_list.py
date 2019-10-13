@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 
-import unittest
 import requests
 import json
-from api_test.global_params import GlobalParams
+from api_test.api.global_params import GlobalParams
 
 '''GET /v2/members/list'''
 
@@ -22,7 +21,6 @@ def get_status_code(response):
     except requests.RequestException as e:
         print(e)
     else:
-        print(response.status_code)
         return response.status_code
 
 

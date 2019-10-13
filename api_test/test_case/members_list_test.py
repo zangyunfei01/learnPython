@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-
-from api_test.members_list import *
+import unittest
+from api_test.api.members_list import *
 
 
 class Test(unittest.TestCase):

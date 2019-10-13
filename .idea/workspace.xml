@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6541bd0c-8a4f-47c9-9003-af744f3b19a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/learn_unittest/simple_function.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_test/HTMLReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_test/test_suite_runner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_unittest/HTMLReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/learn_unittest/HTMLReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_unittest/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_unittest/initialize_function_once_executed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_unittest/test_suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_unittest/test_suite_runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_unittest/HTMLTestRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_unittest/HTMLTestRunner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_unittest/simple_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_unittest/test_simple_function.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +33,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Qfhd4Gf9ZUvErcmalKcW2XpR56" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/api_test" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api_test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/learn_unittest" />
       <recent name="$PROJECT_DIR$" />
@@ -56,7 +65,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_suite">
+  <component name="RunManager" selected="Python.test_suite_runner">
     <configuration name="test_suite" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="learnPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -70,6 +79,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn_unittest/test_suite_runner.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_suite_runner" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="learnPython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api_test/test_suite_runner.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -113,20 +143,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for simple_function.TestDictValueFormatFunctions.test_shuffle" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="learnPython" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learn_unittest" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;simple_function.TestDictValueFormatFunctions.test_shuffle&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Unittests in initialize_function_once_executed.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="learnPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -142,19 +158,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests for simple_function.TestDictValueFormatFunctions.test_shuffle" />
       <item itemvalue="Python tests.Unittests in initialize_function_once_executed.py" />
       <item itemvalue="Python tests.Unittests for initialize_function_once_executed.mytest.test_2" />
       <item itemvalue="Python.test_suite_starter" />
       <item itemvalue="Python.test_suite" />
+      <item itemvalue="Python.test_suite_runner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_suite_runner" />
         <item itemvalue="Python.test_suite" />
         <item itemvalue="Python.test_suite_starter" />
         <item itemvalue="Python tests.Unittests for initialize_function_once_executed.mytest.test_2" />
         <item itemvalue="Python tests.Unittests in initialize_function_once_executed.py" />
-        <item itemvalue="Python tests.Unittests for simple_function.TestDictValueFormatFunctions.test_shuffle" />
       </list>
     </recent_temporary>
   </component>
@@ -193,6 +209,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
