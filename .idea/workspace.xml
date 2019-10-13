@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6541bd0c-8a4f-47c9-9003-af744f3b19a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api_test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_test/global_params.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_test/members_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_test/members_list_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_unittest/simple_function.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_unittest/HTMLReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/learn_unittest/HTMLReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_unittest/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_unittest/initialize_function_once_executed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_unittest/test_suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_unittest/test_suite_runner.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +39,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/learn_unittest" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/python_basics" />
     </key>
   </component>
@@ -55,28 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="get_info" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="learnPython" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api_test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api_test/members_list.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.test_suite">
     <configuration name="test_suite" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="learnPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,7 +69,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn_unittest/test_suite.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn_unittest/test_suite_runner.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -98,35 +78,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for api_test.members_list_test.Test.test_status_code" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="test_suite_starter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="learnPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api_test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learn_unittest" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;api_test.members_list_test.Test.test_status_code&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn_unittest/test_suite_starter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in members_list_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="learnPython" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api_test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/api_test/members_list_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in test_math_function.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for initialize_function_once_executed.mytest.test_2" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="learnPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -136,24 +109,52 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/learn_unittest/test_math_function.py&quot;" />
+      <option name="_new_target" value="&quot;initialize_function_once_executed.mytest.test_2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for simple_function.TestDictValueFormatFunctions.test_shuffle" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="learnPython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learn_unittest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;simple_function.TestDictValueFormatFunctions.test_shuffle&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in initialize_function_once_executed.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="learnPython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learn_unittest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/learn_unittest/initialize_function_once_executed.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.get_info" />
-      <item itemvalue="Python tests.Unittests for api_test.members_list_test.Test.test_status_code" />
-      <item itemvalue="Python tests.Unittests in members_list_test.py" />
-      <item itemvalue="Python tests.Unittests in test_math_function.py" />
+      <item itemvalue="Python tests.Unittests for simple_function.TestDictValueFormatFunctions.test_shuffle" />
+      <item itemvalue="Python tests.Unittests in initialize_function_once_executed.py" />
+      <item itemvalue="Python tests.Unittests for initialize_function_once_executed.mytest.test_2" />
+      <item itemvalue="Python.test_suite_starter" />
       <item itemvalue="Python.test_suite" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in members_list_test.py" />
         <item itemvalue="Python.test_suite" />
-        <item itemvalue="Python tests.Unittests in test_math_function.py" />
-        <item itemvalue="Python.get_info" />
-        <item itemvalue="Python tests.Unittests for api_test.members_list_test.Test.test_status_code" />
+        <item itemvalue="Python.test_suite_starter" />
+        <item itemvalue="Python tests.Unittests for initialize_function_once_executed.mytest.test_2" />
+        <item itemvalue="Python tests.Unittests in initialize_function_once_executed.py" />
+        <item itemvalue="Python tests.Unittests for simple_function.TestDictValueFormatFunctions.test_shuffle" />
       </list>
     </recent_temporary>
   </component>
