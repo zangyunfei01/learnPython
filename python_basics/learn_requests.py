@@ -36,7 +36,7 @@ def response(api_type, request_type):
         r = requests.get(url, params=params, headers=headers)
     elif request_type == 'POST':
         r = requests.post(url, data=data, headers=headers)
-    print('%s api url:' % api_type, r.url)
+    print('%s data_provider url:' % api_type, r.url)
 
     if 200 <= r.status_code < 300:
         print('Direct response:', r.status_code, '\n')

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import unittest
-from api_test.api.members_list import *
+from api_test.test_function.members_list import *
 
 
 class Test(unittest.TestCase):
@@ -13,10 +13,20 @@ class Test(unittest.TestCase):
         print('run only once after test cases')
 
     def test_status_code(self):
-        self.assertEqual(get_status_code(r), 200)
+        try:
+            r.raise_for_status()
+        except requests.RequestException as e:
+            print(e)
+        else:
+            return r.raise_for_status()
 
-    def test_response_body_not_null(self):
-        self.assertNotEqual(get_response_body(), None)
+    def test_data_is_not_empty(self):
+        try:
+            self.assertIsNotNone(get_response_body())
+        except Exception as e:
+            print(e, 'response body is null')
+        else:
+            return get_response_body()
 
     def test_required_params(self):
         self.assertEqual(required_params(), (200, 200, 200))
