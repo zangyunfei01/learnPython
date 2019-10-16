@@ -28,9 +28,6 @@ class Test(unittest.TestCase):
         else:
             return get_response_body()
 
-    def test_required_params(self):
-        self.assertEqual(required_params(), (200, 200, 200))
-
 
 if __name__ == '__main__':
     unittest.main()
