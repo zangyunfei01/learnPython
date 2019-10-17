@@ -31,6 +31,7 @@
         <list>
           <option value="list.wonderful" />
           <option value="StringIO" />
+          <option value="python_basics.test.*" />
         </list>
       </option>
     </inspection_tool>

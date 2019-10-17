@@ -4,7 +4,7 @@ from api_test.data_provider.members_list_base_data import *
 
 def get_base_response():
     # print(base_response)
-    return base_response
+    return base_response_type
 
 
 def get_response(category, page):
@@ -29,16 +29,33 @@ def get_response_body(category, page):
     return json.loads(get_response(category, page).content)
 
 
+complete_dict = {}
+complete_dict_type = {}
+
+
+def get_response_type(new_dict):
+    for k in new_dict:
+        if type(new_dict[k]) == dict:
+            return get_response_type(new_dict[k])
+        else:
+            complete_dict[k] = new_dict[k]
+    return complete_dict
+
+
 def diff_response_body_count(category, page):
     diff_count = 0
     for k1, v1 in get_base_response().items():
-        for k2, v2 in get_response_body(category, page)[0].items():
+        for k2, v2 in get_response_type(get_response_body(category, page)[0]).items():
             if k1 == k2:
                 if type(v2) != v1:
                     print(k1, v1)
                     print(k2, v2)
                     diff_count += 1
-    print(diff_count)
+    if diff_count == 0:
+        print('well done!')
+    else:
+        print(diff_count)
+        print(complete_dict)
     return diff_count
 
 
@@ -46,6 +63,6 @@ def diff_response_body_count(category, page):
 # get_response('home', 1)
 # print(type(get_response_body('home', 1)))
 # print(get_response_body('home', 1)[0])
+# print(type(get_response_body('home', 1)[0]))
+# print(get_response_type(get_response_body('home', 1)[0]))
 diff_response_body_count('home', 1)
-
-
