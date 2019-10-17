@@ -33,7 +33,6 @@ def math(n):
 
 print(math(7))
 
-
 # for k1, v1 in menu.items():
 #     print(k1, ':', v1)
 #     if v1 == '' or v1 == {}:
@@ -43,8 +42,11 @@ print(math(7))
 # print(type(menu['山东']))
 
 
-members_dict = {'id': 'a44224a6d8d629efc47d2fd702518ab7', 'member_id': 92674, 'avatar_url': 'https://img.yidui.me/public/avatars/male/25.jpg', 'sex': 0, 'nickname': '帅呆的凉面', 'age': 26, 'height': 170, 'is_trump': False, 'monologue_status': 1, 'monologue': None, 'online': 2, 'vip': False, 'active': '1小时前', 'current_location': {'province': '北京市', 'city': '北京市', 'district': '朝阳区'}}
-
+members_dict = {'id': 'a44224a6d8d629efc47d2fd702518ab7', 'member_id': 92674,
+                'avatar_url': 'https://img.yidui.me/public/avatars/male/25.jpg', 'sex': 0, 'nickname': '帅呆的凉面',
+                'age': 26, 'height': 170, 'is_trump': False, 'monologue_status': 1, 'monologue': None, 'online': 2,
+                'vip': False, 'active': '1小时前',
+                'current_location': {'province': '北京市', 'city': '北京市', 'district': '朝阳区'}}
 
 complete_type_dict = {}
 
@@ -58,4 +60,14 @@ def get_response_type(new_dict):
     return complete_type_dict
 
 
-print(get_response_type(members_dict))
+# print(get_response_type(members_dict))
+#
+# print(type(members_dict['id']))
+
+
+test1 = {}
+
+
+test1['id'] = type(members_dict['id'])
+
+print(type(test1['id']))

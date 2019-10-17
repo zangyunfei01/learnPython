@@ -32,6 +32,7 @@
           <option value="list.wonderful" />
           <option value="StringIO" />
           <option value="python_basics.test.*" />
+          <option value="api_test.data_provider.members_list_base_data.*" />
         </list>
       </option>
     </inspection_tool>
