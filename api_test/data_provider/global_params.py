@@ -2,5 +2,5 @@
 
 
 class GlobalParams:
-    Authorization = "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6OTAzNzMsImV4cGlyZV9hdCI6IjIwMTktMTAtMTggMDE6NDA6MTUgKzA4MDAifQ.mZ6wVNgcZ3XdHxx7Z3jtK-RGCIyeVS_BejUjYJh2LUs"
-    MemberId = "fd716804f7d7b48bba0ecc887fd28d89"
+    Authorization = "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MjgyNzEwMjgsImV4cGlyZV9hdCI6IjIwMTktMTAtMjIgMDM6MzA6MDEgKzA4MDAifQ.OMdezSMM8QkxBohf4ZAqB3JOm4LUpCpuHWDtw-XXu_w"
+    MemberId = "26b50a18703fcd4e920d4df333ba8b1f"

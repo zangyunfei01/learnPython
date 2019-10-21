@@ -5,16 +5,27 @@ from api_test.test_function.members_list_test_function import *
 
 class Test(unittest.TestCase):
 
-    # @classmethod
-    # def setUpClass(cls):
-    #     print('run only once before test cases')
-    #
-    # @classmethod
-    # def tearDownClass(cls):
-    #     print('run only once after test cases')
+    @classmethod
+    def setUpClass(cls):
+        print('members list test begin')
+
+    @classmethod
+    def tearDownClass(cls):
+        print('members list test finished')
+
+    '''test params'''
 
     def test_status_code(self):
-        self.assertEqual(get_status_code('home', 1), 200)
+        self.assertEqual(get_status_code(param=params), 200)
+
+    def test_not_required_params_0(self):
+        self.assertEqual(get_status_code_without_params(), 200)
+
+    # def test_not_required_params_1(self):
+    #     self.assertEqual(get_status_code(param=params['category']), 200)
+    #
+    # def test_not_required_params_2(self):
+    #     self.assertEqual(get_status_code(param=params['page']), 200)
 
     def test_data_is_not_empty(self):
         try:
@@ -25,7 +36,7 @@ class Test(unittest.TestCase):
             return get_response_body()
 
     def test_response_type(self):
-        self.assertEqual(diff_response_body_count('home', 1), 0)
+        self.assertEqual(diff_response_body_count(), 0)
 
 
 if __name__ == '__main__':
