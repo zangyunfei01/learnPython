@@ -3,7 +3,7 @@ import unittest
 from api_test.test_function.members_list_test_function import *
 
 
-class Test(unittest.TestCase):
+class TestMembersList(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
