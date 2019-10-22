@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6541bd0c-8a4f-47c9-9003-af744f3b19a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_test/HTMLReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/api_test/HTMLReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_test/data_provider/global_params.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_test/data_provider/global_params.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_test/data_provider/members_list_base_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_test/data_provider/members_list_base_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_test/test_case/test_members_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_test/test_case/test_members_list.py" afterDir="false" />
@@ -60,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_suite_runner">
+  <component name="RunManager" selected="Python.members_list_test_function">
     <configuration name="members_list_base_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="learnPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -124,7 +124,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_members_list.Test.test_not_required_params" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_members_list.Test.test_not_required_params_1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="learnPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -134,11 +134,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_members_list.Test.test_not_required_params&quot;" />
+      <option name="_new_target" value="&quot;test_members_list.Test.test_not_required_params_1&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_members_list.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_members_list.Test.test_status_code" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="learnPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,24 +148,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/api_test/test_case/test_members_list.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_members_list.Test.test_status_code&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.members_list_test_function" />
-      <item itemvalue="Python.members_list_base_data" />
-      <item itemvalue="Python tests.Unittests in test_members_list.py" />
-      <item itemvalue="Python tests.Unittests for test_members_list.Test.test_not_required_params" />
       <item itemvalue="Python.test_suite_runner" />
+      <item itemvalue="Python tests.Unittests for test_members_list.Test.test_status_code" />
+      <item itemvalue="Python tests.Unittests for test_members_list.Test.test_not_required_params_1" />
+      <item itemvalue="Python.members_list_base_data" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_suite_runner" />
-        <item itemvalue="Python tests.Unittests in test_members_list.py" />
-        <item itemvalue="Python.members_list_base_data" />
-        <item itemvalue="Python tests.Unittests for test_members_list.Test.test_not_required_params" />
         <item itemvalue="Python.members_list_test_function" />
+        <item itemvalue="Python.members_list_base_data" />
+        <item itemvalue="Python tests.Unittests for test_members_list.Test.test_not_required_params_1" />
+        <item itemvalue="Python.test_suite_runner" />
+        <item itemvalue="Python tests.Unittests for test_members_list.Test.test_status_code" />
       </list>
     </recent_temporary>
   </component>
