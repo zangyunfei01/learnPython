@@ -14,7 +14,7 @@ def send_captcha():
         print('发送失败')
 
 
-def get_member_id():
+def get_headers():
     send_captcha()
     captcha = input('请输入验证码：\n')
     url = 'https://test-apis.520yidui.com/v2/auths/phone_auth'
@@ -23,15 +23,32 @@ def get_member_id():
     if r.status_code < 400:
         response = json.loads(r.content)
         if 'auth_id' in response:
-            r = create(response['auth_id'])
-            id, token = r['id'], r['token']
-            login(id, token)
-            print(r['id'])
-            return r['id']
+            auth_id = response['auth_id']
+            print('auth_id:', auth_id)
+            create(auth_id)
+            id, code = create(auth_id)['id'], create(auth_id)['token']
+            headers = {'Authorization': login(id, code)['token'], 'MemberId': create(auth_id)}
+            print('Headers:', headers)
+            return headers
         else:
-            login(response['id'], response['token'])
-            print(response['id'])
-            return response['id']
+            id, code = response['id'], response['token']
+            headers = {'Authorization': login(id, code)['token'], 'MemberId': id}
+            print('Headers:', headers)
+            return headers
+    else:
+        print(f'状态码：{r.status_code}')
+
+
+def get_headers_by_test_count(phone,captcha):
+    url = 'https://test-apis.520yidui.com/v2/auths/phone_auth'
+    data = {'phone': phone, 'captcha': captcha}
+    r = requests.post(url, data=data)
+    if r.status_code < 400:
+        response = json.loads(r.content)
+        id, code = response['id'], response['token']
+        headers = {'Authorization': login(id, code)['token'], 'MemberId': id}
+        print('Headers:', headers)
+        return headers
     else:
         print(f'状态码：{r.status_code}')
 
@@ -48,34 +65,18 @@ def create(auth_id):
     return json.loads(r.content)
 
 
-def login(id, token):
+def login(id, code):
     url = 'https://test-apis.520yidui.com/v2/login'
-    data = {'id': id, 'code': token}
+    data = {'id': id, 'code': code}
     r = requests.post(url, data=data)
     if r.status_code < 400:
-        response = json.loads(r.content)
-        auth = response['token']
-        print(auth)
-        return auth
-    else:
-        print(f'状态码:{r.status_code}')
-
-
-def get_auth():
-    url = 'https://test-apis.520yidui.com/v2/login'
-    data = {'id': '0e5c5481909d1f9bcaafa60af5c6ef14',
-            'code': 'ae227146eb5b2339d8f67ce51b63e00378aaf300d1deef2920cceabc246696f7'}
-    r = requests.post(url, data=data)
-    if r.status_code < 400:
-        response = json.loads(r.content)
-        auth = response['token']
-        print(auth)
-        return auth
+        print('登录成功')
+        return json.loads(r.content)
     else:
         print(f'状态码:{r.status_code}')
 
 
 if __name__ == '__main__':
     phone = input('请输入手机号：\n')
-    get_member_id()
-    # login()
+    get_headers()
+    get_headers_by_test_count('18700000001','123456')
