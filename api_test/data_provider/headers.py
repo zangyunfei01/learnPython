@@ -19,9 +19,9 @@ def get_headers():
     captcha = input('请输入验证码：\n')
     url = 'https://test-apis.520yidui.com/v2/auths/phone_auth'
     data = {'phone': phone, 'captcha': captcha}
-    r = requests.post(url, data=data)
-    if r.status_code < 400:
-        response = json.loads(r.content)
+    phone_auth = requests.post(url, data=data)
+    if phone_auth.status_code < 400:
+        response = json.loads(phone_auth.content)
         if 'auth_id' in response:
             auth_id = response['auth_id']
             print('auth_id:', auth_id)
@@ -36,21 +36,21 @@ def get_headers():
             print('Headers:', headers)
             return headers
     else:
-        print(f'状态码：{r.status_code}')
+        print(f'状态码：{phone_auth.status_code}')
 
 
 def get_headers_by_test_count(phone, captcha):
     url = 'https://test-apis.520yidui.com/v2/auths/phone_auth'
     data = {'phone': phone, 'captcha': captcha}
-    r = requests.post(url, data=data)
-    if r.status_code < 400:
-        response = json.loads(r.content)
+    phone_auth = requests.post(url, data=data)
+    if phone_auth.status_code < 400:
+        response = json.loads(phone_auth.content)
         id, code = response['id'], response['token']
         headers = {'Authorization': login(id, code)['token'], 'MemberId': id}
         print('Headers:', headers)
         return headers
     else:
-        print(f'状态码：{r.status_code}')
+        print(f'状态码：{phone_auth.status_code}')
 
 
 def create(auth_id):
