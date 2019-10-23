@@ -39,7 +39,7 @@ def get_headers():
         print(f'状态码：{r.status_code}')
 
 
-def get_headers_by_test_count(phone,captcha):
+def get_headers_by_test_count(phone, captcha):
     url = 'https://test-apis.520yidui.com/v2/auths/phone_auth'
     data = {'phone': phone, 'captcha': captcha}
     r = requests.post(url, data=data)
@@ -79,4 +79,4 @@ def login(id, code):
 if __name__ == '__main__':
     phone = input('请输入手机号：\n')
     get_headers()
-    get_headers_by_test_count('18700000001','123456')
+    get_headers_by_test_count('18700000001', '123456')
