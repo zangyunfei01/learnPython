@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6541bd0c-8a4f-47c9-9003-af744f3b19a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_test/data_provider/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_test/data_provider/headers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_test/data_provider/global_params.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_test/data_provider/members_list_base_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_test/data_provider/members_list_base_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_test/HTMLReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/api_test/HTMLReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_test/data_provider/headers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_test/data_provider/headers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_test/test_case/test_members_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_test/test_case/test_members_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_test/test_function/members_list_test_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_test/test_function/members_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_basics/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basics/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,28 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_members_list.py">
-    <configuration name="global_params" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="learnPython" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api_test/data_provider" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api_test/data_provider/global_params.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.test">
     <configuration name="login" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="learnPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,18 +82,46 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_members_list.TestMembersList.test_response_type" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="learnPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api_test/test_case" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python_basics" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_members_list.TestMembersList.test_response_type&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_basics/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_suite_runner" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="learnPython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api_test/test_suite_runner.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests for test_members_list.TestMembersList.test_status_code" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -144,19 +153,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.global_params" />
       <item itemvalue="Python.login" />
+      <item itemvalue="Python.test_suite_runner" />
       <item itemvalue="Python tests.Unittests in test_members_list.py" />
-      <item itemvalue="Python tests.Unittests for test_members_list.TestMembersList.test_response_type" />
       <item itemvalue="Python tests.Unittests for test_members_list.TestMembersList.test_status_code" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in test_members_list.py" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.login" />
+        <item itemvalue="Python.test_suite_runner" />
+        <item itemvalue="Python tests.Unittests in test_members_list.py" />
         <item itemvalue="Python tests.Unittests for test_members_list.TestMembersList.test_status_code" />
-        <item itemvalue="Python tests.Unittests for test_members_list.TestMembersList.test_response_type" />
-        <item itemvalue="Python.global_params" />
       </list>
     </recent_temporary>
   </component>

@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 import unittest
-from api_test.test_function.members_list_test_function import *
+from api_test.test_function.members_list import *
 
 
 class TestMembersList(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        print('members list test begin')
+        print('\nmembers list test begin!\n')
 
     @classmethod
     def tearDownClass(cls):
-        print('members list test finished')
+        print('\nmembers list test finished!\n')
 
     '''test params'''
 
@@ -32,8 +32,6 @@ class TestMembersList(unittest.TestCase):
             self.assertIsNotNone(get_response_body('cp'))
         except Exception as e:
             print(e, 'response body is null')
-        else:
-            return get_response_body('cp')
 
     def test_response_type(self):
         self.assertEqual(diff_response_body_count(), 0)

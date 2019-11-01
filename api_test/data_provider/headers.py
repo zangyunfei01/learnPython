@@ -77,6 +77,6 @@ def login(id, code):
 
 
 if __name__ == '__main__':
-    phone = input('请输入手机号：\n')
-    get_headers()
-    get_headers_by_test_count('18700000001', '123456')
+    # phone = input('请输入手机号：\n')
+    # get_headers()
+    get_headers_by_test_count('18700000003', '123456')

@@ -67,7 +67,35 @@ def get_response_type(new_dict):
 
 test1 = {}
 
-
 test1['id'] = type(members_dict['id'])
 
 print(type(test1['id']))
+
+
+# 1 1 2 3 5
+
+def feibo(n):
+    l = []
+    a, b = 1, 1
+    for x in range(n):
+        l.append(a)
+        a = b
+        b = a + b
+    print(l[n - 1])
+    return l
+
+
+feibo(10)
+
+
+def feibo2(n):
+    l = []
+    if n == 1:
+        return [1]
+    elif n == 2:
+        return [1, 2]
+    else:
+        l.append(feibo2(n - 1) + feibo2(n - 2))
+
+
+print(feibo(3))
