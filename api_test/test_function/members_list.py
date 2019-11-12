@@ -47,7 +47,7 @@ complete_response_body_dict = {}
 
 def get_complete_response_body(new_dict):
     for k in new_dict:
-        if type(new_dict[k]) == dict:
+        if type(new_dict[k]) in (dict, list):
             return get_complete_response_body(new_dict[k])
         else:
             complete_response_body_dict[k] = new_dict[k]
@@ -69,4 +69,5 @@ def diff_response_body_count():
         print('diff_count:', diff_count)
         # print(complete_response_body_dict)
     return diff_count
+
 

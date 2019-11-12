@@ -6,7 +6,7 @@ import api_test.data_provider.headers
 '''GET /v2/members/list'''
 
 url = "https://test-apis.520yidui.com/v2/members/list"
-headers = api_test.data_provider.headers.get_headers_by_test_count('18700000003', '123456')
+headers = api_test.data_provider.headers.get_headers_by_test_account('18700000003', '123456')
 
 '''category和page均为非必需参数'''
 

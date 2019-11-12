@@ -4,7 +4,9 @@ import time
 
 
 def send_captcha():
-    url = 'https://test-apis.520yidui.com/v2/auths/send_captcha'
+    # url = 'https://test-apis.520yidui.com/v2/auths/send_captcha'
+    url = 'https://api.520yidui.com/v2/auths/send_captcha'
+
     timestamp = time.time()
     data = {'sign': 'c5f6a3e950ad0223332de376c0608741', 'timestamp': timestamp, 'phone': phone}
     r = requests.put(url, data=data)
@@ -17,7 +19,9 @@ def send_captcha():
 def get_headers():
     send_captcha()
     captcha = input('请输入验证码：\n')
-    url = 'https://test-apis.520yidui.com/v2/auths/phone_auth'
+    # url = 'https://test-apis.520yidui.com/v2/auths/phone_auth'
+    url = 'https://api.520yidui.com/v2/auths/phone_auth'
+
     data = {'phone': phone, 'captcha': captcha}
     phone_auth = requests.post(url, data=data)
     if phone_auth.status_code < 400:
@@ -39,22 +43,25 @@ def get_headers():
         print(f'状态码：{phone_auth.status_code}')
 
 
-def get_headers_by_test_count(phone, captcha):
-    url = 'https://test-apis.520yidui.com/v2/auths/phone_auth'
+def get_headers_by_test_account(phone, captcha):
+    # url = 'https://test-apis.520yidui.com/v2/auths/phone_auth'
+    url = 'https://api.520yidui.com/v2/auths/phone_auth'
     data = {'phone': phone, 'captcha': captcha}
     phone_auth = requests.post(url, data=data)
     if phone_auth.status_code < 400:
         response = json.loads(phone_auth.content)
         id, code = response['id'], response['token']
         headers = {'Authorization': login(id, code)['token'], 'MemberId': id}
-        print('Headers:', headers)
+        # print('Headers:', headers)
         return headers
     else:
         print(f'状态码：{phone_auth.status_code}')
 
 
 def create(auth_id):
-    url = 'https://test-apis.520yidui.com/v2/members/create'
+    # url = 'https://test-apis.520yidui.com/v2/members/create'
+    url = 'https://api.520yidui.com/v2/members/create'
+
     sex = input('请输入性别（0代表男，1代表女）:\n')
     bitrh = input('请输入生日（xx-xx-xx)：\n')
     data = {'auth_id': auth_id, 'member[sex]': sex, 'member[birthday]': bitrh,
@@ -67,6 +74,8 @@ def create(auth_id):
 
 def login(id, code):
     url = 'https://test-apis.520yidui.com/v2/login'
+    url = 'https://api.520yidui.com/v2/login'
+
     data = {'id': id, 'code': code}
     r = requests.post(url, data=data)
     if r.status_code < 400:
@@ -77,6 +86,6 @@ def login(id, code):
 
 
 if __name__ == '__main__':
-    # phone = input('请输入手机号：\n')
-    # get_headers()
-    get_headers_by_test_count('18700000003', '123456')
+    phone = input('请输入手机号：\n')
+    get_headers()
+    get_headers_by_test_account('18310061886', '1886')
