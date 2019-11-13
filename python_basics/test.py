@@ -88,14 +88,23 @@ def feibo(n):
 feibo(10)
 
 
+# 1,1,2,3,5,8
+
 def feibo2(n):
-    l = []
-    if n == 1:
-        return [1]
-    elif n == 2:
-        return [1, 2]
+    if n in (1, 2):
+        return 1
     else:
-        l.append(feibo2(n - 1) + feibo2(n - 2))
+        return feibo2(n - 1) + feibo2(n - 2)
 
 
-print(feibo(3))
+def feibo3(n):
+    L3 = []
+    for x in range(n):
+        if x in (0, 1):
+           L3.append(1)
+        else:
+            L3.append(L3[x - 1] + L3[x - 2])
+    print(L3)
+
+
+feibo3(4)

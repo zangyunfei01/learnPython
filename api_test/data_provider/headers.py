@@ -86,6 +86,6 @@ def login(id, code):
 
 
 if __name__ == '__main__':
-    phone = input('请输入手机号：\n')
+    phone = int(input('请输入手机号：\n'))
     get_headers()
     get_headers_by_test_account('18310061886', '1886')
