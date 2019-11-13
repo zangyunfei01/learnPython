@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+import sys
+
 false = False
 true = True
 null = None
@@ -101,10 +103,52 @@ def feibo3(n):
     L3 = []
     for x in range(n):
         if x in (0, 1):
-           L3.append(1)
+            L3.append(1)
         else:
             L3.append(L3[x - 1] + L3[x - 2])
     print(L3)
 
 
 feibo3(4)
+
+
+def iteraotr_test():
+    l = [1, 2, 3, 4]
+    it = iter(l)
+    for x in l:
+        try:
+            print('the next one:', next(it))
+        except StopIteration:
+            sys.exit()
+
+
+class MyNumbers:
+    def __iter__(self):
+        self.original = 1
+        return self
+
+    def __next__(self):
+        x = self.original
+        self.original += 1
+        return x
+
+
+if __name__ == '__main__':
+    # iteraotr_test()
+
+    myNumbers = MyNumbers()
+    myIter = iter(myNumbers)
+    for x in range(10):
+        print(next(myIter))
+
+numbers = [1, 3, 6]
+
+list_1 = []
+list_2 = []
+for x in 'Hello':
+    list_1.append(x)
+print(list_1)
+for y in range(len(list_1)):
+    list_2.append(list_1.pop())
+print(list_2)
+
