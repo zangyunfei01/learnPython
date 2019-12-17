@@ -52,7 +52,7 @@ def get_headers_by_test_account(phone, captcha):
         response = json.loads(phone_auth.content)
         id, code = response['id'], response['token']
         headers = {'Authorization': login(id, code)['token'], 'MemberId': id}
-        # print('Headers:', headers)
+        print('Headers:', headers)
         return headers
     else:
         print(f'状态码：{phone_auth.status_code}')
@@ -86,6 +86,6 @@ def login(id, code):
 
 
 if __name__ == '__main__':
-    phone = int(input('请输入手机号：\n'))
-    get_headers()
+    # phone = int(input('请输入手机号：\n'))
+    # get_headers()
     get_headers_by_test_account('18310061886', '1886')
