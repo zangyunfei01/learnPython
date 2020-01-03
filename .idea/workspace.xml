@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6541bd0c-8a4f-47c9-9003-af744f3b19a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api_test/data_provider/chats_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_test/test_case/test_chats_liist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/headers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_test/api_function/lives.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_test/api_utils/logger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_test/data_provider/lives.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_test/test_case/test_lives.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/learnPython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learnPython.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_test/data_provider/headers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_test/api_utils/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_test/data_provider/members_list_base_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_test/test_case/test_members_list.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_test/test_function/chats_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_test/test_function/chats_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_test/test_function/chats_list_class_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_test/test_function/members_list.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_basics/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basics/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_test/HTMLReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/api_test/HTMLReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_test/api_function/chats_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_test/api_function/chats_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/headers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/message.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/message.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +56,8 @@
       <recent name="$PROJECT_DIR$/learn_unittest" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_chats_liist.py">
-    <configuration name="chats_list" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.lives">
+    <configuration name="class_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="learnPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -66,11 +65,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api_test/test_function" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api_test/test_function/chats_list.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/class_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -91,7 +90,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api_test/api_utils/login.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api_test/api_utils/headers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -100,35 +99,49 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_chats_liist.TestChatsList.test_response_type" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="lives" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="learnPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api_test/test_case" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api_test/api_function" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_chats_liist.TestChatsList.test_response_type&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api_test/api_function/lives.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in /Users/zangyunfei/workspace/learnPython/api_test/test_case/test_members_list.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="message" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="learnPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api_test/test_case" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/api_test/test_case/test_members_list.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/message.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_chats_liist.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_lives.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="learnPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,24 +151,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/api_test/test_case/test_chats_liist.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/api_test/test_case/test_lives.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.chats_list" />
-      <item itemvalue="Python tests.Unittests in test_chats_liist.py" />
-      <item itemvalue="Python tests.Unittests for test_chats_liist.TestChatsList.test_response_type" />
-      <item itemvalue="Python tests.Unittests in /Users/zangyunfei/workspace/learnPython/api_test/test_case/test_members_list.py" />
       <item itemvalue="Python.headers" />
+      <item itemvalue="Python.message" />
+      <item itemvalue="Python.class_test" />
+      <item itemvalue="Python tests.Unittests in test_lives.py" />
+      <item itemvalue="Python.lives" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in test_chats_liist.py" />
+        <item itemvalue="Python.lives" />
+        <item itemvalue="Python tests.Unittests in test_lives.py" />
         <item itemvalue="Python.headers" />
-        <item itemvalue="Python tests.Unittests for test_chats_liist.TestChatsList.test_response_type" />
-        <item itemvalue="Python.chats_list" />
-        <item itemvalue="Python tests.Unittests in /Users/zangyunfei/workspace/learnPython/api_test/test_case/test_members_list.py" />
+        <item itemvalue="Python.class_test" />
+        <item itemvalue="Python.message" />
       </list>
     </recent_temporary>
   </component>
@@ -215,38 +228,50 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1576599900519" />
-    <state width="1419" height="225" key="GridCell.Tab.0.bottom" timestamp="1576600925631">
+    <state width="1419" height="225" key="GridCell.Tab.0.bottom" timestamp="1578074011273">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="225" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576600925631" />
-    <state width="1419" height="225" key="GridCell.Tab.0.center" timestamp="1576600925630">
+    <state width="1419" height="225" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578074011273" />
+    <state width="1419" height="181" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1577342379334" />
+    <state width="1419" height="225" key="GridCell.Tab.0.center" timestamp="1578074011272">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="225" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576600925630" />
-    <state width="1419" height="225" key="GridCell.Tab.0.left" timestamp="1576600925630">
+    <state width="1419" height="225" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578074011272" />
+    <state width="1419" height="181" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1577342379332" />
+    <state width="1419" height="225" key="GridCell.Tab.0.left" timestamp="1578074011271">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="225" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576600925630" />
-    <state width="1419" height="225" key="GridCell.Tab.0.right" timestamp="1576600925631">
+    <state width="1419" height="225" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578074011271" />
+    <state width="1419" height="181" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1577342379331" />
+    <state width="1419" height="225" key="GridCell.Tab.0.right" timestamp="1578074011273">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="225" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576600925631" />
-    <state width="1419" height="181" key="GridCell.Tab.1.bottom" timestamp="1576523797302">
+    <state width="1419" height="225" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578074011273" />
+    <state width="1419" height="181" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1577342379332" />
+    <state width="1419" height="181" key="GridCell.Tab.1.bottom" timestamp="1577342379337">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1419" height="181" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576603106753" />
+    <state width="1419" height="181" key="GridCell.Tab.1.bottom/0.23.1440.810@0.23.1440.810" timestamp="1577342379337" />
+    <state width="1419" height="181" key="GridCell.Tab.1.center" timestamp="1577342379335">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1419" height="181" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1576603106750" />
+    <state width="1419" height="181" key="GridCell.Tab.1.center/0.23.1440.810@0.23.1440.810" timestamp="1577342379335" />
+    <state width="1419" height="181" key="GridCell.Tab.1.left" timestamp="1577342379334">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1419" height="181" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1576603106748" />
+    <state width="1419" height="181" key="GridCell.Tab.1.left/0.23.1440.810@0.23.1440.810" timestamp="1577342379334" />
+    <state width="1419" height="181" key="GridCell.Tab.1.right" timestamp="1577342379336">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1419" height="181" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1576603106752" />
+    <state width="1419" height="181" key="GridCell.Tab.1.right/0.23.1440.810@0.23.1440.810" timestamp="1577342379336" />
+    <state x="221" y="89" key="SettingsEditor" timestamp="1578072829527">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="181" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576523797302" />
-    <state width="1419" height="181" key="GridCell.Tab.1.center" timestamp="1576523797301">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="181" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1576523797301" />
-    <state width="1419" height="181" key="GridCell.Tab.1.left" timestamp="1576523797300">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="181" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1576523797300" />
-    <state width="1419" height="181" key="GridCell.Tab.1.right" timestamp="1576523797301">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="181" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1576523797301" />
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1578072829527" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

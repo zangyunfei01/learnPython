@@ -28,14 +28,14 @@ class ChatsList:
         except requests.RequestException as e:
             print(e)
 
-        def get_last_msg():
-            last_msg = []
-            for x in self.get_response_body():
-                for k, v in x.items():
-                    if v == 'last_msg':
-                        last_msg.append(v)
-            logger.info(f'last msg is :{last_msg}')
-            return last_msg
+    def get_last_msg(self):
+        last_msg = []
+        for x in self.get_response_body():
+            for k, v in x.items():
+                if v == 'last_msg':
+                    last_msg.append(v)
+        logger.info(f'last msg is :{last_msg}')
+        return last_msg
 
     """获取结果中的所有字段值，只需要第一个object中所有数据即可,并展开"""
 
