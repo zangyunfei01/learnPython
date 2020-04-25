@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import unittest
-from api_test.test_function.lives import *
 
 
 class TestLives(unittest.TestCase):

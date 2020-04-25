@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
 import unittest
-from api_test.test_function.chats_list import *
+
+from api_automation import get_headers_by_test_account
 
 
 class TestChatsList(unittest.TestCase):
