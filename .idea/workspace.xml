@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6541bd0c-8a4f-47c9-9003-af744f3b19a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api_automation/common/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_automation/data_provider/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_automation/log/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/headers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_automation/HTMLReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_automation/test_case/test_chats_liist.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_automation/test_case/test_chats_liist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_automation/test_case/test_lives.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_automation/test_case/test_lives.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_automation/test_function/chats_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_automation/test_function/chats_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_automation/test_function/lives.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_automation/test_function/lives.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_automation/test_suite_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_automation/test_suite_runner.py" afterDir="false" />
-    </list>
+    <list default="true" id="6541bd0c-8a4f-47c9-9003-af744f3b19a9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
