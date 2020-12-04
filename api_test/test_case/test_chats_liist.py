@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import unittest
-from api_automation.test_function.chats_list import *
+from api_test.test_function.chats_list import *
 
 
 class TestChatsList(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 import os
-from api_automation import HTMLTestRunner
+from api_test.HTMLTestRunner import HTMLTestRunner
 
 if __name__ == '__main__':
     case_path = os.path.join(os.getcwd(), 'test_case')

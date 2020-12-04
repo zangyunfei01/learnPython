@@ -2,8 +2,8 @@
 
 import requests
 import json
-from api_automation.log import logger
-from api_automation.common.headers import get_headers_by_test_account
+from api_test.log import logger
+from api_test.common.headers import get_headers_by_test_account
 
 
 class Lives:

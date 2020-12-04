@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-from api_automation.common.headers import get_headers_by_test_account
-from api_automation.data_provider.chats_list import base_response_type
+from api_test.common.headers import get_headers_by_test_account
+from api_test.data_provider.chats_list import base_response_type
 import requests
 import json
 import logging
