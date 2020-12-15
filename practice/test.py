@@ -1791,13 +1791,13 @@ import os
 #     print('I am child process (%s) and my parent is %s.' % (os.getpid(), os.getppid()))
 # else:
 #     print('I (%s) just created a child process (%s).' % (os.getpid(), pid))
-# import jwt
-# import json
-#
-# # jwt decode
-# jwt_token = "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NzkxNzQ0MzYsImV4cGlyZV9hdCI6IjIwMjAtMTItMDEgMTQ6MjU6NTMgKzA4MDAifQ.W2PkU7tXWoque1n-8zQtnNM-OMYw-iXN2BaTOwmF6bo"
-# data = json.dumps(jwt.decode(jwt=jwt_token, key='', verify=False, algorithms=['HS256']))
-# print(data)
+import jwt
+import json
+
+# jwt decode
+jwt_token = "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ODgxODQsImV4cGlyZV9hdCI6IjIwMjAtMTItMDUgMjM6Mzg6NTUgKzA4MDAifQ.zuc80pNPtYetu2ZbBxgQnZROMTfqm-bF2BNLQrLJd9s"
+data = json.dumps(jwt.decode(jwt=jwt_token, key='', verify=False, algorithms=['HS256']))
+print(data)
 #
 # # jwt encode
 # payload = {"id": 28271028, "expire_at": "2020-12-12 14:25:53 +0800"}
@@ -1816,44 +1816,194 @@ import os
 #     print(jwt_token.readline())
 
 
+# meta_datas = [
+#     [
+#         {
+#             "name": "v3校验手机号",
+#             "data": [
+#                 {
+#                     "request": {
+#                         "url": "https://test1-api.520yidui.com/v3/auths/phone_auth",
+#                         "method": "POST",
+#                         "headers": "{\n  \"User-Agent\":\"python-requests/2.24.0\",\n  \"Accept-Encoding\":\"gzip, deflate\",\n  \"Accept\":\"*/*\",\n  \"Connection\":\"keep-alive\",\n  \"Content-Type\":\"application/json\",\n  \"Content-Length\":\"43\"\n}",
+#                         "body": "{\n  &#34;phone&#34;: &#34;16600000004&#34;,\n  &#34;captcha&#34;: &#34;1234&#34;\n}"
+#                     },
+#                     "response": {
+#                         "ok": True,
+#                         "url": "https://test1-api.520yidui.com/v3/auths/phone_auth",
+#                         "status_code": 200,
+#                         "reason": "OK",
+#                         "cookies": "{}",
+#                         "encoding": "utf-8",
+#                         "headers": "{\n  \"Date\":\"Tue, 01 Dec 2020 10:01:29 GMT\",\n  \"Content-Type\":\"application/json; charset=utf-8\",\n  \"Content-Length\":\"458\",\n  \"Connection\":\"keep-alive\",\n  \"Content-Encoding\":\"gzip\",\n  \"Vary\":\"Accept-Encoding\",\n  \"Access-Control-Allow-Origin\":\"*\",\n  \"Access-Control-Allow-Credentials\":\"true\",\n  \"Access-Control-Allow-Methods\":\"GET, POST, PUT, DELETE, OPTIONS\",\n  \"Access-Control-Allow-Headers\":\"Memberid,Codetag,Channel,Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With\"\n}",
+#                         "content_type": "application/json; charset=utf-8",
+#                         "body": "{\n  \"action\":\"login\",\n  \"age\":23,\n  \"avatar\":{\n    \"status\":0,\n    \"url\":\"https://img.520yidui.com/uploads/member_avatar/avatar/93031/2b34ce505f879ca2eb99f193aa814e69.jpg@!normal\"\n  },\n  \"bucket_action_id\":null,\n  \"consume_rose_count\":99,\n  \"first_paid_at\":0,\n  \"id\":\"84d043ea32eb3fc5e66baa167744d6ab\",\n  \"is_matchmaker\":false,\n  \"is_vip\":true,\n  \"location_id\":12,\n  \"nickname\":\"我们最英俊\",\n  \"phone_validate\":true,\n  \"register_app_id\":1,\n  \"register_at\":1593404499,\n  \"rose_count\":99620083,\n  \"sex\":0,\n  \"token\":\"3abb2005bfdc7ebeba686ff9c71a32e2e8a2d978ce480e98fc176a4e3d3e8bda\",\n  \"unionid\":\"oIRQzwtrLDyq46FdoGuDO4EanKVc_del_2019-08-08 21:18:08 +0800\",\n  \"vip\":true\n}"
+#                     }
+#                 }
+#             ],
+#             "stat": {
+#                 "response_time_ms": 64.93,
+#                 "elapsed_ms": 62.893,
+#                 "content_size": 604
+#             },
+#             "validators": {
+#                 "validate_extractor": [
+#                     {
+#                         "comparator": "equals",
+#                         "check": "status_code",
+#                         "check_value": 200,
+#                         "expect": 200,
+#                         "expect_value": 200,
+#                         "check_result": "pass"
+#                     }
+#                 ]
+#             }
+#         }
+#     ],
+#     {
+#         "name": "v2登录",
+#         "data": [
+#             {
+#                 "request": {
+#                     "url": "https://test1-api.520yidui.com/v2/login",
+#                     "method": "POST",
+#                     "headers": "{\n  \"User-Agent\":\"python-requests/2.24.0\",\n  \"Accept-Encoding\":\"gzip, deflate\",\n  \"Accept\":\"*/*\",\n  \"Connection\":\"keep-alive\",\n  \"Content-Type\":\"application/json\",\n  \"CODETAG\":\"yidui-9.9.9\",\n  \"Content-Length\":\"118\"\n}",
+#                     "body": "{\n  &#34;code&#34;: &#34;3abb2005bfdc7ebeba686ff9c71a32e2e8a2d978ce480e98fc176a4e3d3e8bda&#34;,\n  &#34;id&#34;: &#34;84d043ea32eb3fc5e66baa167744d6ab&#34;\n}"
+#                 },
+#                 "response": {
+#                     "ok": True,
+#                     "url": "https://test1-api.520yidui.com/v2/login",
+#                     "status_code": 201,
+#                     "reason": "Created",
+#                     "cookies": "{}",
+#                     "encoding": "None",
+#                     "headers": "{\n  \"Date\":\"Tue, 01 Dec 2020 10:01:29 GMT\",\n  \"Content-Type\":\"application/json\",\n  \"Content-Length\":\"273\",\n  \"Connection\":\"keep-alive\",\n  \"ETag\":\"W/\\\"2d041baad4d75f78742494f18301648f\\\"\",\n  \"Cache-Control\":\"max-age=0, private, must-revalidate\",\n  \"X-Request-Id\":\"d92e0e23a38d88fa90c15144b8dbbece\",\n  \"X-Runtime\":\"0.004938\",\n  \"Access-Control-Allow-Origin\":\"*\",\n  \"Access-Control-Allow-Credentials\":\"true\",\n  \"Access-Control-Allow-Methods\":\"GET, POST, PUT, DELETE, OPTIONS\",\n  \"Access-Control-Allow-Headers\":\"Memberid,Codetag,Channel,Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With\"\n}",
+#                     "content_type": "application/json",
+#                     "body": "{\n  \"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6OTMwMzEsImV4cGlyZV9hdCI6IjIwMjAtMTItMDEgMjA6MDE6MjkgKzA4MDAiLCJkZXZpY2VfaWQiOm51bGwsImdpb2lkIjpudWxsLCJ5ZGlkIjpudWxsLCJjaGFubmVsX25hbWUiOm51bGwsImlwIjoiMzYuMTEwLjg2LjIwMyJ9.2M9Qdcdv3r2rjRTjMcmPt54kGn5Zr1mhkByO-OUE7H8\"\n}"
+#                 }
+#             }
+#         ],
+#         "stat": {
+#             "response_time_ms": 54.95,
+#             "elapsed_ms": 52.912,
+#             "content_size": 273
+#         },
+#         "validators": {
+#             "validate_extractor": [
+#                 {
+#                     "comparator": "equals",
+#                     "check": "status_code",
+#                     "check_value": 201,
+#                     "expect": 201,
+#                     "expect_value": 201,
+#                     "check_result": "pass"
+#                 }
+#             ]
+#         }
+#     }
+# ]
+#
+# for z in meta_datas:
+#     if isinstance(z, list):
+#         continue
+#     elif isinstance(z, dict):
+#         data = z["data"]
+# print(data)
+
+# import time
+# t = str(time.time()).split('.')[0]
+# print(type(t))
+# print(t)
+
+# error = "\u4eca\u65e5\u5934\u50cf\u4e0a\u4f20\u6b21\u6570\u5df2\u7ecf\u8fbe\u5230\u4e0a\u9650"
+# print(type(error))
+# print(error.encode('utf-8'))
+# print(type(error.encode('utf-8')))
+# error = error.encode('utf-8').decode('utf-8')
+# print(error)
+
+
 meta_datas = [
     [
+        [
+            {
+                "name": "v3校验手机号",
+                "data": [
+                    {
+                        "request": {
+                            "url": "https://test1-api.520yidui.com/v3/auths/phone_auth",
+                            "method": "POST",
+                            "headers": "{\n  \"User-Agent\":\"python-requests/2.24.0\",\n  \"Accept-Encoding\":\"gzip, deflate\",\n  \"Accept\":\"*/*\",\n  \"Connection\":\"keep-alive\",\n  \"Channel\":\"market_GUANWANG\",\n  \"CodeTag\":\"yidui-9.9.9\",\n  \"timestamp\":\"1608000309\",\n  \"noncestr\":\"lekxsmmiclwqwhnlzazmzxirrphxinhc\",\n  \"Content-Type\":\"application/json\",\n  \"Content-Length\":\"43\"\n}",
+                            "body": "{\n  &#34;phone&#34;: &#34;16600000004&#34;,\n  &#34;captcha&#34;: &#34;1234&#34;\n}"
+                        },
+                        "response": {
+                            "ok": True,
+                            "url": "https://test1-api.520yidui.com/v3/auths/phone_auth",
+                            "status_code": 200,
+                            "reason": "OK",
+                            "cookies": "{}",
+                            "encoding": "utf-8",
+                            "headers": "{\n  \"content-encoding\":\"gzip\",\n  \"content-type\":\"application/json; charset=utf-8\",\n  \"vary\":\"Accept-Encoding\",\n  \"date\":\"Tue, 15 Dec 2020 02:45:09 GMT\",\n  \"content-length\":\"458\",\n  \"x-envoy-upstream-service-time\":\"7\",\n  \"server\":\"istio-envoy\"\n}",
+                            "content_type": "application/json; charset=utf-8",
+                            "body": "{\n  \"action\":\"login\",\n  \"age\":23,\n  \"avatar\":{\n    \"status\":0,\n    \"url\":\"https://img.520yidui.com/uploads/member_avatar/avatar/93031/2b34ce505f879ca2eb99f193aa814e69.jpg@!normal\"\n  },\n  \"bucket_action_id\":null,\n  \"consume_rose_count\":99,\n  \"first_paid_at\":0,\n  \"id\":\"84d043ea32eb3fc5e66baa167744d6ab\",\n  \"is_matchmaker\":false,\n  \"is_vip\":true,\n  \"location_id\":12,\n  \"nickname\":\"我们最英俊\",\n  \"phone_validate\":true,\n  \"register_app_id\":1,\n  \"register_at\":1593404499,\n  \"rose_count\":99612951,\n  \"sex\":0,\n  \"token\":\"3abb2005bfdc7ebeba686ff9c71a32e2e8a2d978ce480e98fc176a4e3d3e8bda\",\n  \"unionid\":\"oIRQzwtrLDyq46FdoGuDO4EanKVc_del_2019-08-08 21:18:08 +0800\",\n  \"vip\":true\n}"
+                        }
+                    }
+                ],
+                "stat": {
+                    "response_time_ms": 100.73,
+                    "elapsed_ms": 98.77,
+                    "content_size": 604
+                },
+                "validators": {
+                    "validate_extractor": [
+                        {
+                            "comparator": "equals",
+                            "check": "status_code",
+                            "check_value": 200,
+                            "expect": 200,
+                            "expect_value": 200,
+                            "check_result": "pass"
+                        }
+                    ]
+                }
+            }
+        ],
         {
-            "name": "v3校验手机号",
+            "name": "v2登录",
             "data": [
                 {
                     "request": {
-                        "url": "https://test1-api.520yidui.com/v3/auths/phone_auth",
+                        "url": "https://test1-api.520yidui.com/v2/login",
                         "method": "POST",
-                        "headers": "{\n  \"User-Agent\":\"python-requests/2.24.0\",\n  \"Accept-Encoding\":\"gzip, deflate\",\n  \"Accept\":\"*/*\",\n  \"Connection\":\"keep-alive\",\n  \"Content-Type\":\"application/json\",\n  \"Content-Length\":\"43\"\n}",
-                        "body": "{\n  &#34;phone&#34;: &#34;16600000004&#34;,\n  &#34;captcha&#34;: &#34;1234&#34;\n}"
+                        "headers": "{\n  \"User-Agent\":\"python-requests/2.24.0\",\n  \"Accept-Encoding\":\"gzip, deflate\",\n  \"Accept\":\"*/*\",\n  \"Connection\":\"keep-alive\",\n  \"Content-Type\":\"application/json\",\n  \"CODETAG\":\"yidui-9.9.9\",\n  \"Content-Length\":\"118\"\n}",
+                        "body": "{\n  &#34;code&#34;: &#34;3abb2005bfdc7ebeba686ff9c71a32e2e8a2d978ce480e98fc176a4e3d3e8bda&#34;,\n  &#34;id&#34;: &#34;84d043ea32eb3fc5e66baa167744d6ab&#34;\n}"
                     },
                     "response": {
                         "ok": True,
-                        "url": "https://test1-api.520yidui.com/v3/auths/phone_auth",
-                        "status_code": 200,
-                        "reason": "OK",
+                        "url": "https://test1-api.520yidui.com/v2/login",
+                        "status_code": 201,
+                        "reason": "Created",
                         "cookies": "{}",
-                        "encoding": "utf-8",
-                        "headers": "{\n  \"Date\":\"Tue, 01 Dec 2020 10:01:29 GMT\",\n  \"Content-Type\":\"application/json; charset=utf-8\",\n  \"Content-Length\":\"458\",\n  \"Connection\":\"keep-alive\",\n  \"Content-Encoding\":\"gzip\",\n  \"Vary\":\"Accept-Encoding\",\n  \"Access-Control-Allow-Origin\":\"*\",\n  \"Access-Control-Allow-Credentials\":\"true\",\n  \"Access-Control-Allow-Methods\":\"GET, POST, PUT, DELETE, OPTIONS\",\n  \"Access-Control-Allow-Headers\":\"Memberid,Codetag,Channel,Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With\"\n}",
-                        "content_type": "application/json; charset=utf-8",
-                        "body": "{\n  \"action\":\"login\",\n  \"age\":23,\n  \"avatar\":{\n    \"status\":0,\n    \"url\":\"https://img.520yidui.com/uploads/member_avatar/avatar/93031/2b34ce505f879ca2eb99f193aa814e69.jpg@!normal\"\n  },\n  \"bucket_action_id\":null,\n  \"consume_rose_count\":99,\n  \"first_paid_at\":0,\n  \"id\":\"84d043ea32eb3fc5e66baa167744d6ab\",\n  \"is_matchmaker\":false,\n  \"is_vip\":true,\n  \"location_id\":12,\n  \"nickname\":\"我们最英俊\",\n  \"phone_validate\":true,\n  \"register_app_id\":1,\n  \"register_at\":1593404499,\n  \"rose_count\":99620083,\n  \"sex\":0,\n  \"token\":\"3abb2005bfdc7ebeba686ff9c71a32e2e8a2d978ce480e98fc176a4e3d3e8bda\",\n  \"unionid\":\"oIRQzwtrLDyq46FdoGuDO4EanKVc_del_2019-08-08 21:18:08 +0800\",\n  \"vip\":true\n}"
+                        "encoding": "None",
+                        "headers": "{\n  \"content-type\":\"application/json\",\n  \"etag\":\"W/\\\"a9746cd98f47778e862c5715cd9a2e0d\\\"\",\n  \"cache-control\":\"max-age=0, private, must-revalidate\",\n  \"x-request-id\":\"5bbb1037-8316-942a-a26b-e221fbaa45f7\",\n  \"x-runtime\":\"0.005128\",\n  \"content-length\":\"273\",\n  \"x-envoy-upstream-service-time\":\"6\",\n  \"date\":\"Tue, 15 Dec 2020 02:45:09 GMT\",\n  \"server\":\"istio-envoy\"\n}",
+                        "content_type": "application/json",
+                        "body": "{\n  \"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6OTMwMzEsImV4cGlyZV9hdCI6IjIwMjAtMTItMTUgMTI6NDU6MDkgKzA4MDAiLCJkZXZpY2VfaWQiOm51bGwsImdpb2lkIjpudWxsLCJ5ZGlkIjpudWxsLCJjaGFubmVsX25hbWUiOm51bGwsImlwIjoiMzYuMTEwLjg2LjIwMiJ9.zew0uWYAKKEtd74wNdR5z2ltpyws22iavp18YcOrdP4\"\n}"
                     }
                 }
             ],
             "stat": {
-                "response_time_ms": 64.93,
-                "elapsed_ms": 62.893,
-                "content_size": 604
+                "response_time_ms": 87.84,
+                "elapsed_ms": 85.781,
+                "content_size": 273
             },
             "validators": {
                 "validate_extractor": [
                     {
                         "comparator": "equals",
                         "check": "status_code",
-                        "check_value": 200,
-                        "expect": 200,
-                        "expect_value": 200,
+                        "check_value": 201,
+                        "expect": 201,
+                        "expect_value": 201,
                         "check_result": "pass"
                     }
                 ]
@@ -1861,51 +2011,53 @@ meta_datas = [
         }
     ],
     {
-        "name": "v2登录",
+        "name": "互动通知",
         "data": [
             {
                 "request": {
-                    "url": "https://test1-api.520yidui.com/v2/login",
-                    "method": "POST",
-                    "headers": "{\n  \"User-Agent\":\"python-requests/2.24.0\",\n  \"Accept-Encoding\":\"gzip, deflate\",\n  \"Accept\":\"*/*\",\n  \"Connection\":\"keep-alive\",\n  \"Content-Type\":\"application/json\",\n  \"CODETAG\":\"yidui-9.9.9\",\n  \"Content-Length\":\"118\"\n}",
-                    "body": "{\n  &#34;code&#34;: &#34;3abb2005bfdc7ebeba686ff9c71a32e2e8a2d978ce480e98fc176a4e3d3e8bda&#34;,\n  &#34;id&#34;: &#34;84d043ea32eb3fc5e66baa167744d6ab&#34;\n}"
+                    "url": "https://test1-api.520yidui.com/v3/chats/notification",
+                    "method": "GET",
+                    "headers": "{\n  \"User-Agent\":\"python-requests/2.24.0\",\n  \"Accept-Encoding\":\"gzip, deflate\",\n  \"Accept\":\"*/*\",\n  \"Connection\":\"keep-alive\",\n  \"Authorization\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6OTMwMzEsImV4cGlyZV9hdCI6IjIwMjAtMTItMTUgMTI6NDU6MDkgKzA4MDAiLCJkZXZpY2VfaWQiOm51bGwsImdpb2lkIjpudWxsLCJ5ZGlkIjpudWxsLCJjaGFubmVsX25hbWUiOm51bGwsImlwIjoiMzYuMTEwLjg2LjIwMiJ9.zew0uWYAKKEtd74wNdR5z2ltpyws22iavp18YcOrdP4\"\n}"
                 },
                 "response": {
-                    "ok": True,
-                    "url": "https://test1-api.520yidui.com/v2/login",
-                    "status_code": 201,
-                    "reason": "Created",
+                    "ok": False,
+                    "url": "https://test1-api.520yidui.com/v3/chats/notification",
+                    "status_code": 500,
+                    "reason": "Internal Server Error",
                     "cookies": "{}",
-                    "encoding": "None",
-                    "headers": "{\n  \"Date\":\"Tue, 01 Dec 2020 10:01:29 GMT\",\n  \"Content-Type\":\"application/json\",\n  \"Content-Length\":\"273\",\n  \"Connection\":\"keep-alive\",\n  \"ETag\":\"W/\\\"2d041baad4d75f78742494f18301648f\\\"\",\n  \"Cache-Control\":\"max-age=0, private, must-revalidate\",\n  \"X-Request-Id\":\"d92e0e23a38d88fa90c15144b8dbbece\",\n  \"X-Runtime\":\"0.004938\",\n  \"Access-Control-Allow-Origin\":\"*\",\n  \"Access-Control-Allow-Credentials\":\"true\",\n  \"Access-Control-Allow-Methods\":\"GET, POST, PUT, DELETE, OPTIONS\",\n  \"Access-Control-Allow-Headers\":\"Memberid,Codetag,Channel,Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With\"\n}",
-                    "content_type": "application/json",
-                    "body": "{\n  \"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6OTMwMzEsImV4cGlyZV9hdCI6IjIwMjAtMTItMDEgMjA6MDE6MjkgKzA4MDAiLCJkZXZpY2VfaWQiOm51bGwsImdpb2lkIjpudWxsLCJ5ZGlkIjpudWxsLCJjaGFubmVsX25hbWUiOm51bGwsImlwIjoiMzYuMTEwLjg2LjIwMyJ9.2M9Qdcdv3r2rjRTjMcmPt54kGn5Zr1mhkByO-OUE7H8\"\n}"
+                    "encoding": "utf-8",
+                    "headers": "{\n  \"content-encoding\":\"gzip\",\n  \"content-type\":\"application/json; charset=utf-8\",\n  \"vary\":\"Accept-Encoding\",\n  \"date\":\"Tue, 15 Dec 2020 02:45:09 GMT\",\n  \"content-length\":\"26\",\n  \"x-envoy-upstream-service-time\":\"1\",\n  \"server\":\"istio-envoy\"\n}",
+                    "content_type": "application/json; charset=utf-8",
+                    "body": "[]"
                 }
             }
         ],
         "stat": {
-            "response_time_ms": 54.95,
-            "elapsed_ms": 52.912,
-            "content_size": 273
+            "response_time_ms": 132.51,
+            "elapsed_ms": 130.413,
+            "content_size": 2
         },
         "validators": {
             "validate_extractor": [
                 {
                     "comparator": "equals",
                     "check": "status_code",
-                    "check_value": 201,
-                    "expect": 201,
-                    "expect_value": 201,
-                    "check_result": "pass"
+                    "check_value": 500,
+                    "expect": 200,
+                    "expect_value": 200,
+                    "check_result": "fail"
                 }
             ]
         }
     }
 ]
 
-for z in meta_datas:
-    if isinstance(z, list):
-        continue
-    elif isinstance(z, dict):
-        data = z["data"]
-print(data)
+
+def traverse_list(l:list):
+    for x in l:
+        if isinstance(x,list):
+            return traverse_list(x)
+        else:
+            return x
+
+print(traverse_list(meta_datas)["data"])
